@@ -1,0 +1,148 @@
+{
+  "version": "0.0.1",
+  "language": "ko",
+  "items": [
+    {
+      "id": "j_giyeok",
+      "tier": "jamo",
+      "hangul": "ㄱ",
+      "romanization": "g/k",
+      "meaning": null,
+      "order": 1,
+      "distractorIds": ["j_nieun", "j_digeut"]
+    },
+    {
+      "id": "j_nieun",
+      "tier": "jamo",
+      "hangul": "ㄴ",
+      "romanization": "n",
+      "meaning": null,
+      "order": 2,
+      "distractorIds": ["j_giyeok", "j_digeut"]
+    },
+    {
+      "id": "j_digeut",
+      "tier": "jamo",
+      "hangul": "ㄷ",
+      "romanization": "d/t",
+      "meaning": null,
+      "order": 3,
+      "distractorIds": ["j_giyeok", "j_nieun"]
+    },
+    {
+      "id": "g_ga",
+      "tier": "geulja",
+      "hangul": "가",
+      "romanization": "ga",
+      "meaning": null,
+      "order": 1,
+      "distractorIds": ["g_na", "g_da"]
+    },
+    {
+      "id": "g_na",
+      "tier": "geulja",
+      "hangul": "나",
+      "romanization": "na",
+      "meaning": null,
+      "order": 2,
+      "distractorIds": ["g_ga", "g_da"]
+    },
+    {
+      "id": "g_da",
+      "tier": "geulja",
+      "hangul": "다",
+      "romanization": "da",
+      "meaning": null,
+      "order": 3,
+      "distractorIds": ["g_ga", "g_na"]
+    },
+    {
+      "id": "w_nara",
+      "tier": "word",
+      "hangul": "나라",
+      "romanization": "nara",
+      "meaning": "country",
+      "order": 1,
+      "geulja": [
+        { "hangul": "나", "romanization": "na" },
+        { "hangul": "라", "romanization": "ra" }
+      ],
+      "distractorIds": ["w_nabi", "w_gara", "w_dara"]
+    },
+    {
+      "id": "w_nabi",
+      "tier": "word",
+      "hangul": "나비",
+      "romanization": "nabi",
+      "meaning": "butterfly",
+      "order": 2,
+      "geulja": [
+        { "hangul": "나", "romanization": "na" },
+        { "hangul": "비", "romanization": "bi" }
+      ],
+      "distractorIds": ["w_nara", "w_gara", "w_dara"]
+    },
+    {
+      "id": "w_gara",
+      "tier": "word",
+      "hangul": "가라",
+      "romanization": "gara",
+      "meaning": "go (command)",
+      "order": 3,
+      "geulja": [
+        { "hangul": "가", "romanization": "ga" },
+        { "hangul": "라", "romanization": "ra" }
+      ],
+      "distractorIds": ["w_nara", "w_nabi", "w_dara"]
+    },
+    {
+      "id": "w_dara",
+      "tier": "word",
+      "hangul": "다라",
+      "romanization": "dara",
+      "meaning": null,
+      "order": 4,
+      "geulja": [
+        { "hangul": "다", "romanization": "da" },
+        { "hangul": "라", "romanization": "ra" }
+      ],
+      "distractorIds": ["w_nara", "w_nabi", "w_gara"]
+    },
+    {
+      "id": "p_annyeong",
+      "tier": "phrase",
+      "hangul": "안녕하세요",
+      "romanization": "annyeonghaseyo",
+      "meaning": "hello",
+      "order": 1,
+      "distractorIds": ["p_kamsahamnida", "p_mianhamnida", "p_juseyo"]
+    },
+    {
+      "id": "p_kamsahamnida",
+      "tier": "phrase",
+      "hangul": "감사합니다",
+      "romanization": "gamsahamnida",
+      "meaning": "thank you",
+      "order": 2,
+      "distractorIds": ["p_annyeong", "p_mianhamnida", "p_juseyo"]
+    },
+    {
+      "id": "p_mianhamnida",
+      "tier": "phrase",
+      "hangul": "미안합니다",
+      "romanization": "mianhamnida",
+      "meaning": "I'm sorry",
+      "order": 3,
+      "distractorIds": ["p_annyeong", "p_kamsahamnida", "p_juseyo"]
+    },
+    {
+      "id": "p_juseyo",
+      "tier": "phrase",
+      "hangul": "주세요",
+      "romanization": "juseyo",
+      "meaning": "please give me",
+      "order": 4,
+      "distractorIds": ["p_annyeong", "p_kamsahamnida", "p_mianhamnida"]
+    }
+  ]
+}
