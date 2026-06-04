@@ -8,3 +8,6 @@ export const AUTOMATIC_THRESHOLD_MS: Record<Tier, number> = {
   word: 2500,
   phrase: 4000,
 };
+
+// Consecutive fast-correct reps required to reach the "automatic" state. Tunable.
+export const AUTOMATIC_STREAK = 3;

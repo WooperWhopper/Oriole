@@ -17,9 +17,12 @@
     "react-native-svg": "15.15.4"
   },
   "devDependencies": {
+    "@types/jest": "^30.0.0",
     "@types/node": "^25.9.1",
     "@types/react": "~19.2.2",
+    "jest": "^30.4.2",
     "koroman": "^1.0.16",
+    "ts-jest": "^29.4.11",
     "tsx": "^4.22.4",
     "typescript": "~6.0.3",
     "xlsx": "^0.18.5"
@@ -29,6 +32,7 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
+    "test": "jest",
     "build:content": "tsx scripts/build-content.ts",
     "review:export-meanings": "tsx scripts/export-meanings-review.ts",
     "review:import-meanings": "tsx scripts/import-meanings-review.ts"
