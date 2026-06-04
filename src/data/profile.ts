@@ -52,6 +52,29 @@ export async function setMeta(meta: ProgressMeta): Promise<void> {
   await AsyncStorage.setItem(KEYS.meta, JSON.stringify(meta));
 }
 
+export function getAllRecords(): Record<string, ItemRecord> {
+  return { ...cachedRecords };
+}
+
+/** Creates a default ItemRecord for an item that has never been seen. */
+export function freshRecord(item: { id: string; tier: string }): ItemRecord {
+  return {
+    itemId: item.id,
+    state: 'new',
+    reps: 0,
+    correctCount: 0,
+    incorrectCount: 0,
+    introduced: item.tier !== 'word', // words need the introduction step; others don't
+    lastReactionTimeMs: null,
+    bestReactionTimeMs: null,
+    fastCorrectStreak: 0,
+    interval: 0,
+    easeFactor: 2.5,
+    nextDue: null,
+    lastSeen: null,
+  };
+}
+
 export async function getSettings(): Promise<Settings> {
   const raw = await AsyncStorage.getItem(KEYS.settings);
   if (!raw) return { soundEnabled: true, sessionLength: 20 };
