@@ -29,7 +29,9 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "build:content": "tsx scripts/build-content.ts"
+    "build:content": "tsx scripts/build-content.ts",
+    "review:export-meanings": "tsx scripts/export-meanings-review.ts",
+    "review:import-meanings": "tsx scripts/import-meanings-review.ts"
   },
   "private": true
 }
